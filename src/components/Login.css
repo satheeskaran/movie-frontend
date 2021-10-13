@@ -1,0 +1,206 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.loginWrap{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid #ddd; */
+    -webkit-box-shadow: 0px 0px 26px -15px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 26px -15px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 26px -15px rgba(0,0,0,0.45);
+    z-index: 5;
+    background-color: #ffffff;
+}
+.imageContainer{
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.imageContainer img{
+    object-fit: cover;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+.overlayContent{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+}
+.imageContainer h1{
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Birthstone', cursive;
+    letter-spacing: 4px;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+.imageContainer p{
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 0;
+}
+.logo-m{
+    color: red;
+}
+
+.loginContainer{
+    padding: 20px;
+    position: relative;
+}
+.loginContainer h1{
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Birthstone', cursive;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.loginContent{
+    padding-top: 20px;
+}
+.loginContent h2{
+    font-size: 26px;
+}
+.loginContent p{
+    font-size: 14px;
+    color: rgba(0,0,0,0.6)
+}
+.forgotWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+}
+.forgotPass{
+    font-size: 13px;
+}
+.forgotWrap label{
+    font-size: 13px;
+    margin-left: 8px;
+}
+.forgotWrap .checkBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#remember, #term{
+    cursor: pointer;
+}
+.loginBtn{
+    width: 100%;
+    height: 34px;
+    border-radius: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border: 1px solid #eee;
+    font-size: 15px;
+    background-color: #cd0000;
+    margin-top: 8px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+.joinWrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.joinWrap p, .joinWrap a{
+    font-size: 14px;
+}
+.loginBtn:hover{
+    background-color: #b90000;
+}
+.sa-form{
+    padding-top: 10px;
+}
+.error{
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #a50000;
+    padding: 12px;
+    border-top-right-radius: 15px;
+    transition: 0.2s ease;
+    justify-content: space-between;
+    align-items: center;
+    transform-origin:  top;
+}
+.error p{
+    font-size: 14px;
+    color: white;
+}
+.error .close{
+    color: white;
+    font-size: 20px;
+    transform: rotate(45deg);
+    text-decoration: none;
+    cursor: pointer;
+}
+.registerForm{
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    .login{
+        height: 100vh;
+    }
+    .loginWrap{
+        width: 900px;
+        height: 500px;
+    }
+    .imageContainer{
+        width: 750px;
+    }
+    .registerForm{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .imageContainer{
+        display: none;
+    }
+    .error{
+        border-top-left-radius: 15px;
+    }
+    .registerForm{
+        flex-direction: column;
+    }
+    .login{
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .loginWrap{
+        width: 500px;
+        height: 500px;
+    }
+}
